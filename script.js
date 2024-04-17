@@ -3,10 +3,10 @@ function daysOfAYear(year) {
 	return isLeapYear(year) ? 366 : 365
 }
 function isLeapYear(year) {
-	return year%400 === 0 || (year % 100 !== 0 && year % 4 === 0);
+	return year % 400 === 0 || (year % 100 !== 0 && year % 4 === 0);
 }
 
-let year = promt("Enter a year")
+let year = prompt("Enter a year")
 if(Number(year)!== NaN){
-	daysOfAYear(year);
+	alert(daysOfAYear(year));
 }
